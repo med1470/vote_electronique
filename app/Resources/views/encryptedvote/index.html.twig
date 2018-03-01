@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Encryptedvotes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Encryptedvote</th>
+                <th>Id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for encryptedvote in encryptedvotes %}
+            <tr>
+                <td><a href="{{ path('encryptedvote_show', { 'id': encryptedvote.id }) }}">{{ encryptedvote.encryptedVote }}</a></td>
+                <td>{{ encryptedvote.id }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('encryptedvote_show', { 'id': encryptedvote.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('encryptedvote_edit', { 'id': encryptedvote.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('encryptedvote_new') }}">Create a new encryptedvote</a>
+        </li>
+    </ul>
+{% endblock %}
