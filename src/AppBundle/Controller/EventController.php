@@ -10,7 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component
 /**
  * Event controller.
  *
- * @Route("import")
+ * @Route("importer")
  */
 class EventController extends Controller
 {
@@ -34,7 +34,7 @@ class EventController extends Controller
     /**
      * Creates a new event entity.
      *
-     * @Route("/new", name="event_new")
+     * @Route("/nouveau", name="event_new")
      * @Method({"GET", "POST"})
      */
     public function newAction(Request $request)

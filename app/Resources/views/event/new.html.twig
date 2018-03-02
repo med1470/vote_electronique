@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </head>
 
     <body class="sticky-header left-side-collapsed">
-    <section>
+    <section >
         <!-- left side start-->
         <div class="left-side sticky-left-side">
 
@@ -58,8 +58,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 <!--sidebar nav start-->
                 <ul class="nav nav-pills nav-stacked custom-nav">
-                    <li class="active"><a href="/"><i class="lnr lnr-power-switch"></i><span>Tableau de bord</span></a></li>
-                    <li><a href="/import/new"><i class="	glyphicon glyphicon-upload"></i> <span>importer les donnees</span></a></li>
+                    <li ><a href="/"><i class="lnr lnr-power-switch"></i><span>Tableau de bord</span></a></li>
+                    <li class="active"><a href="/importer/nouveau"><i class="	glyphicon glyphicon-upload"></i> <span>importer les donnees</span></a></li>
                     <li><a href="forms.html"><i class="glyphicon glyphicon-th-list"></i> <span>Liste des candidates</span></a></li>
                     <li><a href="tables.html"><i class="	glyphicon glyphicon-menu-hamburger"></i> <span>Liste des electeurs</span></a></li>
                     <li><a href="forms.html"><i class="glyphicon glyphicon-check"></i> <span>Resultat</span></a></li>
@@ -104,7 +104,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <ul class="dropdown-menu drp-mnu">
 
                                         <li> <a href="/profile"><i class="fa fa-user"></i>Profile</a> </li>
-                                        <li> <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                                        <li> <a href="/logout"><i class="fa fa-sign-out"></i> Deconnexion</a> </li>
                                     </ul>
                                 </li>
                                 <div class="clearfix"> </div>
@@ -116,14 +116,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!--notification menu end -->
             </div>
             <!-- //header-ends -->
+
+            <div class="container">
+                <div class="row">
             <div id="page-wrapper">
-                <div class="graphs">
+                <div class="graphs" style="margin-top: 8%;margin-left: 50">
 
-                    <button type="button" class="btn btn-success">Importer les données </button>
 
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <label class="btn btn-success">
+                           Choisir une fichier excel <input type="file" style="display: none;" name="excelFile" >
+                        </label>
+                        <input type="submit" name="btnInport" value="Importer les données" class="btn btn-success"/>
+
+
+
+
+                    </form>
                 </div>
                 <!--body wrapper end-->
-            </div></div>
+            </div></div></div></div>
 
         <!-- main content end-->
     </section>

@@ -131,7 +131,6 @@ class BallotController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('ballot_delete', array('id' => $ballot->getId())))
             ->setMethod('DELETE')
-            ->getForm()
-        ;
+            ->getForm();
     }
 }

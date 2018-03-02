@@ -9,35 +9,43 @@
         <head>
             <title>Tableau de board</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
             <meta name="keywords" content="Easy Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-            <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+            <script type="application/x-javascript"> addEventListener("load", function () {
+                    setTimeout(hideURLbar, 0);
+                }, false);
+
+                function hideURLbar() {
+                    window.scrollTo(0, 1);
+                } </script>
             <!-- Bootstrap Core CSS -->
-            <link href="{{ asset('template/css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+            <link href="{{ asset('template/css/bootstrap.min.css') }}" rel='stylesheet' type='text/css'/>
             <!-- Custom CSS -->
-            <link href="{{ asset('template/css/style.css')}}"  rel='stylesheet' type='text/css' />
+            <link href="{{ asset('template/css/style.css') }}" rel='stylesheet' type='text/css'/>
             <!-- Graph CSS -->
-            <link href="{{ asset('template/css/font-awesome.css')}}"  rel="stylesheet">
+            <link href="{{ asset('template/css/font-awesome.css') }}" rel="stylesheet">
             <!-- jQuery -->
             <!-- lined-icons -->
-            <link rel="stylesheet" href="{{ asset('template/css/icon-font.min.css')}}" type='text/css' />
+            <link rel="stylesheet" href="{{ asset('template/css/icon-font.min.css') }}" type='text/css'/>
             <!-- //lined-icons -->
             <!-- chart -->
-            <script src="{{ asset('template/js/Chart.js')}}"></script>
+            <script src="{{ asset('template/js/Chart.js') }}"></script>
             <!-- //chart -->
             <!--animate-->
-            <link href="{{ asset('template/css/animate.css')}}" rel="stylesheet" type="text/css" media="all">
-            <script src="{{ asset('template/js/wow.min.js')}}"></script>
+            <link href="{{ asset('template/css/animate.css') }}" rel="stylesheet" type="text/css" media="all">
+            <script src="{{ asset('template/js/wow.min.js') }}"></script>
             <script>
                 new WOW().init();
             </script>
             <!--//end-animate-->
             <!----webfonts--->
-            <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic'
+                  rel='stylesheet' type='text/css'>
             <!---//webfonts--->
             <!-- Meters graphs -->
-            <script src="{{ asset('template/js/jquery-1.10.2.min.js')}}"></script>
+            <script src="{{ asset('template/js/jquery-1.10.2.min.js') }}"></script>
             <!-- Placed js at the end of the document so the pages load faster -->
 
         </head>
@@ -49,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 <!--logo and iconic logo start-->
                 <div class="logo">
-                    <h1><a href="index.html">Easy <span>Admin</span></a></h1>
+                    <h1><a href="">Easy <span>Admin</span></a></h1>
                 </div>
                 <div class="logo-icon text-center">
                     <a href="/"><i class="lnr lnr-home"></i> </a>
@@ -60,11 +68,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     <!--sidebar nav start-->
                     <ul class="nav nav-pills nav-stacked custom-nav">
-                        <li class="active"><a href="/"><i class="lnr lnr-power-switch"></i><span>Tableau de bord</span></a></li>
-                        <li><a href="/import/new"><i class="	glyphicon glyphicon-upload"></i> <span>importer les donnees</span></a></li>
-                        <li><a href="forms.html"><i class="glyphicon glyphicon-th-list"></i> <span>Liste des candidates</span></a></li>
-                        <li><a href="tables.html"><i class="	glyphicon glyphicon-menu-hamburger"></i> <span>Liste des electeurs</span></a></li>
-                        <li><a href="forms.html"><i class="glyphicon glyphicon-check"></i> <span>Resultat</span></a></li>
+                        <li class="active"><a href="/"><i class="lnr lnr-power-switch"></i><span>Tableau de bord</span></a>
+                        </li>
+                        <li><a href="/importer/nouveau"><i class="	glyphicon glyphicon-upload"></i> <span>importer les donnees</span></a>
+                        </li>
+                        <li><a href="forms.html"><i class="glyphicon glyphicon-th-list"></i>
+                                <span>Liste des candidates</span></a></li>
+                        <li><a href="tables.html"><i class="	glyphicon glyphicon-menu-hamburger"></i> <span>Liste des electeurs</span></a>
+                        </li>
+                        <li><a href="forms.html"><i class="glyphicon glyphicon-check"></i> <span>Resultat</span></a>
+                        </li>
 
 
                     </ul>
@@ -92,9 +105,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="profile_details">
                                 <ul>
                                     <li class="dropdown profile_details_drop">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                           aria-expanded="false">
                                             <div class="profile_img">
-                                                <span style="background:url{{ asset('template/images/1.png')}} no-repeat center"> </span>
+                                                <span style="background:url{{ asset('template/images/1.png') }} no-repeat center"> </span>
                                                 <div class="user-name">
                                                     <p> {{ app.user.username }} <span>Administrator</span></p>
                                                 </div>
@@ -105,11 +119,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </a>
                                         <ul class="dropdown-menu drp-mnu">
 
-                                            <li> <a href="/profile"><i class="fa fa-user"></i>Profile</a> </li>
-                                            <li> <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                                            <li><a href="/profile"><i class="fa fa-user"></i>Profile</a></li>
+                                            <li><a href="/logout"><i class="fa fa-sign-out"></i> Deconnexion</a></li>
                                         </ul>
                                     </li>
-                                    <div class="clearfix"> </div>
+                                    <div class="clearfix"></div>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
@@ -165,7 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </div>
                                 </div>
                             </div>
-                            <div class="clearfix"> </div>
+                            <div class="clearfix"></div>
                         </div>
 
                         <!-- switches -->
@@ -184,17 +198,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </div>
                                     </div>
                                     <div class="sparkline">
-                                        <canvas id="line" height="150" width="480" style="width: 480px; height: 150px;"></canvas>
+                                        <canvas id="line" height="150" width="480"
+                                                style="width: 480px; height: 150px;"></canvas>
                                         <script>
                                             var lineChartData = {
-                                                labels : ["Mon","Tue","Wed","Thu","Fri","Sat","Mon"],
-                                                datasets : [
+                                                labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Mon"],
+                                                datasets: [
                                                     {
-                                                        fillColor : "#fff",
-                                                        strokeColor : "#F44336",
-                                                        pointColor : "#fbfbfb",
-                                                        pointStrokeColor : "#F44336",
-                                                        data : [20,35,45,30,10,65,40]
+                                                        fillColor: "#fff",
+                                                        strokeColor: "#F44336",
+                                                        pointColor: "#fbfbfb",
+                                                        pointStrokeColor: "#F44336",
+                                                        data: [20, 35, 45, 30, 10, 65, 40]
                                                     }
                                                 ]
 
@@ -216,20 +231,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </div>
                                     </div>
                                     <div class="sparkline">
-                                        <canvas id="bar" height="150" width="480" style="width: 480px; height: 150px;"></canvas>
+                                        <canvas id="bar" height="150" width="480"
+                                                style="width: 480px; height: 150px;"></canvas>
                                         <script>
                                             var barChartData = {
-                                                labels : ["Mon","Tue","Wed","Thu","Fri","Sat","Mon","Tue","Wed","Thu"],
-                                                datasets : [
+                                                labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Mon", "Tue", "Wed", "Thu"],
+                                                datasets: [
                                                     {
-                                                        fillColor : "#8BC34A",
-                                                        strokeColor : "#8BC34A",
-                                                        data : [25,40,50,65,55,30,20,10,6,4]
+                                                        fillColor: "#8BC34A",
+                                                        strokeColor: "#8BC34A",
+                                                        data: [25, 40, 50, 65, 55, 30, 20, 10, 6, 4]
                                                     },
                                                     {
-                                                        fillColor : "#8BC34A",
-                                                        strokeColor : "#8BC34A",
-                                                        data : [30,45,55,70,40,25,15,8,5,2]
+                                                        fillColor: "#8BC34A",
+                                                        strokeColor: "#8BC34A",
+                                                        data: [30, 45, 55, 70, 40, 25, 15, 8, 5, 2]
                                                     }
                                                 ]
 
@@ -252,8 +268,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </div>
                                     <div class="sparkline">
                                         <!--graph-->
-                                        <link rel="stylesheet" href="{{ asset('template/css/graph.css')}}">
-                                        <script src="{{ asset('template/js/jquery.flot.min.js')}}"></script>
+                                        <link rel="stylesheet" href="{{ asset('template/css/graph.css') }}">
+                                        <script src="{{ asset('template/js/jquery.flot.min.js') }}"></script>
                                         <!--//graph-->
                                         <script>
                                             $(document).ready(function () {
@@ -261,9 +277,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 // Graph Data ##############################################
                                                 var graphData = [{
                                                     // Returning Visits
-                                                    data: [ [4, 4500], [5,3500], [6, 6550], [7, 7600],[8, 4500], [9,3500], [10, 6550], ],
+                                                    data: [[4, 4500], [5, 3500], [6, 6550], [7, 7600], [8, 4500], [9, 3500], [10, 6550],],
                                                     color: '#FFCA28',
-                                                    points: { radius: 7, fillColor: '#fff' }
+                                                    points: {radius: 7, fillColor: '#fff'}
                                                 }
                                                 ];
 
@@ -317,8 +333,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </script>
                                         <div id="graph-wrapper">
                                             <div class="graph-container">
-                                                <div id="graph-lines"> </div>
-                                                <div id="graph-bars"> </div>
+                                                <div id="graph-lines"></div>
+                                                <div id="graph-bars"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -333,49 +349,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <h3>Inbox</h3>
                                     <div class="scrollbar scrollbar1" id="style-2">
                                         <div class="activity-row">
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/1.png')}}" class="img-responsive" alt=""/></div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/1.png') }}"
+                                                        class="img-responsive" alt=""/></div>
                                             <div class="col-xs-7 activity-desc">
                                                 <h5><a href="#">John Smith</a></h5>
                                                 <p>Hey ! There I'm available.</p>
                                             </div>
                                             <div class="col-xs-2 activity-desc1"><h6>13:40 PM</h6></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                         <div class="activity-row">
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/5.png')}}" class="img-responsive" alt=""/></div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/5.png') }}"
+                                                        class="img-responsive" alt=""/></div>
                                             <div class="col-xs-7 activity-desc">
                                                 <h5><a href="#">Andrew Jos</a></h5>
                                                 <p>Hey ! There I'm available.</p>
                                             </div>
                                             <div class="col-xs-2 activity-desc1"><h6>13:40 PM</h6></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                         <div class="activity-row">
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/3.png')}}" class="img-responsive" alt=""/></div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/3.png') }}"
+                                                        class="img-responsive" alt=""/></div>
                                             <div class="col-xs-7 activity-desc">
                                                 <h5><a href="#">Adom Smith</a></h5>
                                                 <p>Hey ! There I'm available.</p>
                                             </div>
                                             <div class="col-xs-2 activity-desc1"><h6>13:40 PM</h6></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                         <div class="activity-row">
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/4.png')}}"class="img-responsive" alt=""/></div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/4.png') }}"
+                                                        class="img-responsive" alt=""/></div>
                                             <div class="col-xs-7 activity-desc">
                                                 <h5><a href="#">Peter Carl</a></h5>
                                                 <p>Hey ! There I'm available.</p>
                                             </div>
                                             <div class="col-xs-2 activity-desc1"><h6>13:40 PM</h6></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                         <div class="activity-row">
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/1.png')}}"class="img-responsive" alt=""/></div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/1.png') }}"
+                                                        class="img-responsive" alt=""/></div>
                                             <div class="col-xs-7 activity-desc">
                                                 <h5><a href="#">John Smith</a></h5>
                                                 <p>Hey ! There I'm available.</p>
                                             </div>
                                             <div class="col-xs-2 activity-desc1"><h6>13:40 PM</h6></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -385,7 +411,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <h3>chat</h3>
                                     <div class="scrollbar" id="style-2">
                                         <div class="activity-row activity-row1">
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/1.png')}}" class="img-responsive" alt=""/><span>10:00 PM</span></div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/1.png') }}"
+                                                        class="img-responsive" alt=""/><span>10:00 PM</span></div>
                                             <div class="col-xs-5 activity-img1">
                                                 <div class="activity-desc-sub">
                                                     <h5>John Smith</h5>
@@ -393,7 +421,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 </div>
                                             </div>
                                             <div class="col-xs-4 activity-desc1"></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                         <div class="activity-row activity-row1">
                                             <div class="col-xs-2 activity-desc1"></div>
@@ -403,11 +431,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                     <p>Hi,How are you ? What about our next meeting?</p>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/3.png')}}" class="img-responsive" alt=""/><span>10:02 PM</span></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/3.png') }}"
+                                                        class="img-responsive" alt=""/><span>10:02 PM</span></div>
+                                            <div class="clearfix"></div>
                                         </div>
                                         <div class="activity-row activity-row1">
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/1.png')}}" class="img-responsive" alt=""/><span>10:00 PM</span></div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/1.png') }}"
+                                                        class="img-responsive" alt=""/><span>10:00 PM</span></div>
                                             <div class="col-xs-5 activity-img1">
                                                 <div class="activity-desc-sub">
                                                     <h5>John Smith</h5>
@@ -415,7 +447,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 </div>
                                             </div>
                                             <div class="col-xs-4 activity-desc1"></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="clearfix"></div>
                                         </div>
                                         <div class="activity-row activity-row1">
                                             <div class="col-xs-2 activity-desc1"></div>
@@ -425,12 +457,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                     <p>Wow that's great</p>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-3 activity-img"><img src="{{ asset('template/images/3.png')}}" class="img-responsive" alt=""/><span>10:02 PM</span></div>
-                                            <div class="clearfix"> </div>
+                                            <div class="col-xs-3 activity-img"><img
+                                                        src="{{ asset('template/images/3.png') }}"
+                                                        class="img-responsive" alt=""/><span>10:02 PM</span></div>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                     <form>
-                                        <input type="text" value="Enter your text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your text';}" required="">
+                                        <input type="text" value="Enter your text" onfocus="this.value = '';"
+                                               onblur="if (this.value == '') {this.value = 'Enter your text';}"
+                                               required="">
                                         <input type="submit" value="Send" required=""/>
                                     </form>
                                 </div>
@@ -443,43 +479,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             <div class="single-bottom">
                                                 <ul>
                                                     <li>
-                                                        <input type="checkbox"  id="brand" value="">
-                                                        <label for="brand"><span></span> Sunt in culpa qui officia.</label>
+                                                        <input type="checkbox" id="brand" value="">
+                                                        <label for="brand"><span></span> Sunt in culpa qui
+                                                            officia.</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand1" value="">
-                                                        <label for="brand1"><span></span> Fugiat quo voluptas nulla.</label>
+                                                        <input type="checkbox" id="brand1" value="">
+                                                        <label for="brand1"><span></span> Fugiat quo voluptas
+                                                            nulla.</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand2" value="">
+                                                        <input type="checkbox" id="brand2" value="">
                                                         <label for="brand2"><span></span> Dolorem eum.</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand9" value="">
-                                                        <label for="brand9"><span></span> Pain that produces no resultant.</label>
+                                                        <input type="checkbox" id="brand9" value="">
+                                                        <label for="brand9"><span></span> Pain that produces no
+                                                            resultant.</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand8" value="">
-                                                        <label for="brand8"><span></span> Cupidatat non proident.</label>
+                                                        <input type="checkbox" id="brand8" value="">
+                                                        <label for="brand8"><span></span> Cupidatat non
+                                                            proident.</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand7" value="">
-                                                        <label for="brand7"><span></span> Praising pain was born.</label>
+                                                        <input type="checkbox" id="brand7" value="">
+                                                        <label for="brand7"><span></span> Praising pain was
+                                                            born.</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand3" value="">
+                                                        <input type="checkbox" id="brand3" value="">
                                                         <label for="brand3"><span></span> Computer & Electronics</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand4" value="">
+                                                        <input type="checkbox" id="brand4" value="">
                                                         <label for="brand4"><span></span> Dolorem ipsum quia.</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand5" value="">
-                                                        <label for="brand5"><span></span> Consequatur aut perferendis.</label>
+                                                        <input type="checkbox" id="brand5" value="">
+                                                        <label for="brand5"><span></span> Consequatur aut
+                                                            perferendis.</label>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox"  id="brand6" value="">
+                                                        <input type="checkbox" id="brand6" value="">
                                                         <label for="brand6"><span></span> Dolorem ipsum quia.</label>
                                                     </li>
 
@@ -489,13 +531,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </div>
                                     </div>
                                     <form>
-                                        <input type="text" value="Enter your text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your text';}" required="">
+                                        <input type="text" value="Enter your text" onfocus="this.value = '';"
+                                               onblur="if (this.value == '') {this.value = 'Enter your text';}"
+                                               required="">
                                         <input type="submit" value="Submit" required=""/>
                                     </form>
                                 </div>
-                                <div class="clearfix"> </div>
+                                <div class="clearfix"></div>
                             </div>
-                            <div class="clearfix"> </div>
+                            <div class="clearfix"></div>
 
                         </div>
                     </div>
@@ -507,10 +551,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- main content end-->
         </section>
 
-        <script src="{{ asset('template/js/jquery.nicescroll.js')}}"></script>
-        <script src="{{ asset('template/js/scripts.js')}}"></script>
+        <script src="{{ asset('template/js/jquery.nicescroll.js') }}"></script>
+        <script src="{{ asset('template/js/scripts.js') }}"></script>
         <!-- Bootstrap Core JavaScript -->
-        <script src="{{ asset('template/js/bootstrap.min.js')}}"></script>
+        <script src="{{ asset('template/js/bootstrap.min.js') }}"></script>
         </body>
         </html>
 
@@ -519,40 +563,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
         <!DOCTYPE HTML>
-        <html style="background-image:url('{{asset('template2/images/10.jpg ' )}}')" >
+        <html style="background-image:url('{{ asset('template2/images/10.jpg ' ) }}')">
         <head>
-            <title>Election a Society and People Category Flat Bootstrap Responsive Website Template | About :: w3layouts</title>
+            <title>Election a Society and People Category Flat Bootstrap Responsive Website Template | About ::
+                w3layouts</title>
             <!-- for-mobile-apps -->
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
             <meta name="keywords" content="Election Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-            <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-                function hideURLbar(){ window.scrollTo(0,1); } </script>
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+            <script type="application/x-javascript"> addEventListener("load", function () {
+                    setTimeout(hideURLbar, 0);
+                }, false);
+
+                function hideURLbar() {
+                    window.scrollTo(0, 1);
+                } </script>
             <!-- //for-mobile-apps -->
-            <link href="{{ asset('template2/css/bootstrap.css')}} " rel='stylesheet' type='text/css' />
-            <link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-            <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" type="text/css" href="{{ asset('template2/css/style.css')}} ">
+            <link href="{{ asset('template2/css/bootstrap.css') }} " rel='stylesheet' type='text/css'/>
+            <link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
+                  type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+                  rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" type="text/css" href="{{ asset('template2/css/style.css') }} ">
             <!---strat-slider---->
-            <script type="text/javascript" src="{{ asset('template2/js/jquery-1.11.1.min.js')}} "></script>
+            <script type="text/javascript" src="{{ asset('template2/js/jquery-1.11.1.min.js') }} "></script>
             <!---//-slider---->
         </head>
-        <body style="background-image:url('{{asset('template2/images/10.jpg ' )}}')">
+        <body style="background-image:url('{{ asset('template2/images/10.jpg ' ) }}')">
         <!-- header -->
         <div class="header_bg">
 
-            <div >
+            <div>
                 <!-----start-header----->
                 <div class="header">
                     <div class="logo">
-                        <a href="index.html"><img src="{{ asset('template2/images/logo1.png')}} " alt=" " /></a>
+                        <a href="/"><img src="{{ asset('template2/images/12.png') }} " alt=" "/></a>
 
                     </div>
                     <nav class="navbar navbar-default">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -563,26 +616,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="act"><a href="/">Home</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elections<b class="caret"></b></a>
-                                    <ul class="dropdown-menu multi-column columns-3">
-                                        <div class="row">
-                                            <div class="party">
-                                                <ul class="multi-column-dropdown">
-                                                    <li><a href="about.html">Current Elections</a></li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="about.html">Past Elections</a></li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="about.html">Future Elections</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                </li>
-                                <li><a href="results.html">List of candidates</a></li>
-                                <li ><a href="about.html">list of electors</a></li>
-                                <li><a href="codes.html"> Us</a></li>
+                                <li class="act"><a href="/">Accuiel</a></li>
+                                <li><a href="/">Accuiel</a></li>
+                                <li><a href="/">AccuielAccuiel</a></li>
+                                <li><a href="/">dddddddddd</a></li>
+                                <li><a href="codes.html">Contact Nous</a></li>
                                 <li><a href="/logout">logout</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -596,24 +634,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <!-- //end-header -->
 
-        <div class="row" style="margin-top: 100px; text-align: center " >
-            <div class="container" >
-                <h1>Welcome </h1>
+        <div class="row" style="margin-top: 100px; text-align: center ">
+            <div class="container">
 
-                <h2> Hi {{ app.user.username }} in your voting space</h2>
+
+                <h2> Bienvenue {{ app.user.username }} dans votre space de vote</h2>
             </div>
 
             <br>
             <br>
             <br>
-            <button style=" font-size: 50px; width: 300px; height: 150px" type="button" class="	glyphicon glyphicon-check btn btn-primary btn-lg">vote</button>
-
+            <button style=" font-size: 50px; width: 300px; height: 150px" type="button"
+                    class="	glyphicon glyphicon-check btn btn-primary btn-lg">vote
+            </button>
 
 
         </div>
         </div>
         <!-- for bootstrap working -->
-        <script type="text/javascript" src="{{ asset('template2/js/bootstrap-3.1.1.min.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('template2/js/bootstrap-3.1.1.min.js') }}"></script>
         <!-- //for bootstrap working -->
         </body>
         </html>
@@ -622,50 +661,58 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         {% trans_default_domain 'FOSUserBundle' %}
 
         <!DOCTYPE HTML>
-        <html style="background-image:url('{{asset('template2/images/back.jpg ' )}}')  " >
+        <html style="background-image:url('{{ asset('template2/images/back.jpg ' ) }}')  ">
         <head>
             <title>Profile</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
             <meta name="keywords" content="Easy Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-            <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+            <script type="application/x-javascript"> addEventListener("load", function () {
+                    setTimeout(hideURLbar, 0);
+                }, false);
+
+                function hideURLbar() {
+                    window.scrollTo(0, 1);
+                } </script>
             <!-- Bootstrap Core CSS -->
-            <link href="{{ asset('template/css/bootstrap.min.css') }}" rel='stylesheet' type='text/css' />
+            <link href="{{ asset('template/css/bootstrap.min.css') }}" rel='stylesheet' type='text/css'/>
             <!-- Custom CSS -->
-            <link href="{{ asset('template/css/style.css')}}"  rel='stylesheet' type='text/css' />
+            <link href="{{ asset('template/css/style.css') }}" rel='stylesheet' type='text/css'/>
             <!-- Graph CSS -->
-            <link href="{{ asset('template/css/font-awesome.css')}}"  rel="stylesheet">
+            <link href="{{ asset('template/css/font-awesome.css') }}" rel="stylesheet">
             <!-- jQuery -->
             <!-- lined-icons -->
-            <link rel="stylesheet" href="{{ asset('template/css/icon-font.min.css')}}" type='text/css' />
+            <link rel="stylesheet" href="{{ asset('template/css/icon-font.min.css') }}" type='text/css'/>
             <!-- //lined-icons -->
             <!-- chart -->
-            <script src="{{ asset('template/js/Chart.js')}}"></script>
+            <script src="{{ asset('template/js/Chart.js') }}"></script>
             <!-- //chart -->
             <!--animate-->
-            <link href="{{ asset('template/css/animate.css')}}" rel="stylesheet" type="text/css" media="all">
-            <script src="{{ asset('template/js/wow.min.js')}}"></script>
+            <link href="{{ asset('template/css/animate.css') }}" rel="stylesheet" type="text/css" media="all">
+            <script src="{{ asset('template/js/wow.min.js') }}"></script>
             <script>
                 new WOW().init();
             </script>
             <!--//end-animate-->
             <!----webfonts--->
-            <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic'
+                  rel='stylesheet' type='text/css'>
             <!---//webfonts--->
             <!-- Meters graphs -->
-            <script src="{{ asset('template/js/jquery-1.10.2.min.js')}}"></script>
+            <script src="{{ asset('template/js/jquery-1.10.2.min.js') }}"></script>
             <!-- Placed js at the end of the document so the pages load faster -->
 
         </head>
 
-        <body style="background-image:url('{{asset('template2/images/back.jpg ' )}}') "  >
-        <section >
+        <body style="background-image:url('{{ asset('template2/images/back.jpg ' ) }}') ">
+        <section>
             <div class="container">
                 <div class="row">
-                    <div style="margin-top: 7%" >
-                        <h1 style="text-align: center;    font-weight: 900;" >Bienvenue dans notre systeme des votes</h1>
-                        <img style="    display: block ;   margin-left: auto;  margin-right: auto; " src="{{ asset('template2/images/12.png')}} " alt=" " />
+                    <div style="margin-top: 7%">
+                        <h1 style="text-align: center;    font-weight: 900;">Bienvenue dans notre systeme des votes</h1>
+                        <img style="    display: block ;   margin-left: auto;  margin-right: auto; "
+                             src="{{ asset('template2/images/12.png') }} " alt=" "/>
                         <br>
                         <br>
                         <br>
@@ -673,20 +720,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
 
-            <form  action="/login" method="get">
+            <form action="/login" method="get">
 
-                        <button style="font-size:20px ;  display: block ;   margin-left: auto;  margin-right: auto;      font-weight: 900;"  class="btn btn-danger">Connexion</button>
-                    </form>
-
-
+                <button style="font-size:20px ; width: 300px; height: 50px;  display: block ;   margin-left: auto;  margin-right: auto;      font-weight: 900;"
+                        class="btn btn-danger">Connexion
+                </button>
+            </form>
 
 
         </section>
 
-        <script src="{{ asset('template/js/jquery.nicescroll.js')}}"></script>
-        <script src="{{ asset('template/js/scripts.js')}}"></script>
+        <script src="{{ asset('template/js/jquery.nicescroll.js') }}"></script>
+        <script src="{{ asset('template/js/scripts.js') }}"></script>
         <!-- Bootstrap Core JavaScript -->
-        <script src="{{ asset('template/js/bootstrap.min.js')}}"></script>
+        <script src="{{ asset('template/js/bootstrap.min.js') }}"></script>
         </body>
         </html>
 

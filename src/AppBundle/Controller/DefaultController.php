@@ -34,4 +34,9 @@ class DefaultController extends Controller
             ->renderResponse('FOSUserBundle:Profile:show.html.'.$this->container
                     ->getParameter('fos_user.template.engine'), array('user' => $user));
     }
+
+
+
+
+
 }
